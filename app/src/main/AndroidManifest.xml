@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.camila.ortiz.ortiz_final">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ortiz_VID_Final"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.examenfinal.MapsActivity"
+            android:exported="false" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.examenfinal.editatActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.examenfinal.detalleActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.examenfinal.crearNuevoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.examenfinal.favoritosActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.examenfinal.todosActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.detallae"
+            android:exported="false" />
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.listaActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.registarPelicula"
+            android:exported="false" />
+        <activity
+            android:name="com.camila.ortiz.ortiz_final.principalActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
